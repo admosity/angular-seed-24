@@ -1,0 +1,18 @@
+// Harmonise v2.0
+
+// Project Icons Config
+// @import 'scss/icons/icons';
+
+// Color Config
+@import '~evolution-core/scss/settings/colors';
+
+// Component Config
+@import 'project.var.config';
+@import 'project.component.config';
+
+// Core import
+@import '~evolution-core/scss/evolution-core';
+
+// Project targeting
+@import "project.mobile";
+@import "project.overrides";

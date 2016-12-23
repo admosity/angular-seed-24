@@ -1,0 +1,51 @@
+//
+// IE fixes for Foundation's Flex Grid issues
+//
+@media screen\0 {
+
+  // Set width on row and generic div
+  .row {
+    width:100%;
+  }
+
+  // Fix banner min-height issues
+  .evo-banner {
+    // height:$evo-banner-height;
+  }
+  .evo-notification__icon-left {
+    width:60px;
+  }
+
+  // Header list style issue
+  .header__dropdown {
+    list-style-type: none;
+  }
+
+  @media (min-width: 0) {
+    @for $i from 1 through 12 {
+      .small-#{$i} {
+        width: 100% / 12 * $i;
+        flex:none;
+      }
+    }
+  }
+
+  @media (min-width: 48em) {
+    @for $i from 1 through 12 {
+      .medium-#{$i} {
+        width: 100% / 12 * $i;
+        flex:none;
+      }
+    }
+  }
+
+  @media (min-width: 64em) {
+    @for $i from 1 through 12 {
+      .large-#{$i} {
+        width: 100% / 12 * $i;
+        flex:none;
+      }
+    }
+  }
+
+}

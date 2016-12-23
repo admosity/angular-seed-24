@@ -1,0 +1,22 @@
+.evo-layout--grid-max-width {
+  @include breakpoint(medium down) {
+    padding: 0 5%;
+  }
+}
+
+.columns {
+  @include breakpoint(medium down) {
+    margin-bottom:20px;
+  }
+}
+.hold-your-breath .hold-your-breath__label .hold-your-breath__value  {
+  @include breakpoint(medium down) {
+    margin: 0;
+  }
+}
+
+.evo-layout--grid-max-width {
+  @include breakpoint(medium down) {
+    margin: 2em auto;
+  }
+}

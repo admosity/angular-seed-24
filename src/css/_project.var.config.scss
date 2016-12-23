@@ -1,0 +1,155 @@
+// Grid settings
+//
+$banner-default-img: '/assets/images/demo/banner.jpg';
+
+//  Global
+$evo-base-margin:	                      1.5em;
+$evo-base-padding:	                    1.5em;
+$evo-base-grid-max-width:               65em;
+$global-width:                          65em;
+$grid-max-width-margin:                 4em auto;
+
+$evo-text-sizes:(
+	extra-small: .75rem,
+  small: 0.9rem,
+  medium: 1.2rem,
+  medium-large: 1.4rem,
+	large: 2rem,
+	extra-large: 4rem,
+	magnum: 5rem
+);
+
+// Alert
+$evo-alert-top-offset: 3em;
+$evo-alert-padding: 0.75em 3em;
+
+// Buttons
+$evo-button-padding:                    0.9em 1.5em;
+$evo-button-wide-padding:               0.85em 3em;
+$evo-button-wide-min-width:             335px;
+
+$evo-button-sizes: (
+  small: 0.75rem,
+  default: 1rem,
+  large: 1.25rem,
+);
+
+//  Cards
+$evo-card-padding:                      1.5em 1.4em;
+$evo-card-header-text-transform:        none;
+$evo-card-header-border-color:          $onyx-dark-20;
+$evo-card-header-margin-bottom:         1.5em;
+
+
+// Dashboard cards
+$alt-card-border-width: 3px;
+$alt-card-border-right: 1px solid $onyx-dark-20;
+$dragicon-color: $onyx-dark-30;
+$alt-card-box-shadow: -1px 1px 6px 2px transparentize($black, .89);
+
+
+
+//  Base header rule overrides
+$evo-base-header-rule-margin-bottom:    0;
+$evo-base-header-rule-border:				    1px solid $onyx-dark-14;
+$evo-base-header-rule-letter-spacing:	  0.2em;
+$evo-base-header-rule-text-transform:	  uppercase;
+
+//  Accordions
+$accordion-header-padding:              6px 20px 0;
+$accordion-content-padding:             6px 20px 0;
+$accordion-inner-padding:               1em 0 0;
+
+//  Form headers
+$form-header-subtitle-font-size: 				38px;
+$form-header-subtitle-line-height: 			38px;
+$form-header-title-font-size: 					20px;
+$form-header-title-line-height: 				20px;
+
+//  Notifications
+$notification-padding: 1em 1em 1em 2em;
+$notification-margin: 1em auto;
+$notification-radius: 3px;
+$notification-box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.11);
+
+$notification-icon-offset: -1.8em;
+
+// Icon circle sizing
+// Map: Size class name, Size of circle, Font-size
+$icon-circle-sizes: (
+  (tiny, 55px, 26px),
+  (small, 55px, 26px),
+  (medium, 60px, 30px),
+  (large, 105px, 34px),
+  (xlarge, 145px, 34px),
+  (hm-tiny, 95px, 40px),
+  (hm-xlarge, 95px, 55px),
+);
+// Banner
+$evo-banner-height: 600px;
+
+// Chip
+$evo-chip-padding: 0.8em 1em 0.6em 0.3em;
+$evo-chip-margin: 0 0.3em 0 0;
+$evo-chip-background-default: $sapphire-diet;
+$evo-chip-background-hover-default: darken($sapphire-diet, 5%);
+$evo-chip-color-default: $onyx-dark-70;
+$evo-chip-font-size:  18px;
+
+// progress
+
+
+/// Progress base default padding
+/// @type Number
+$evo-progress-padding: 0 0 0.1em;
+$evo-progress-margin:  1em 0;
+$evo-progress-padding: 0;
+
+$evo-progress-step-padding: 1.4em 0;
+$evo-progress-step-offset: -2.2em;
+
+$evo-progress-bar-border: 1px solid $sapphire-dark;
+
+$evo-progress-active-time-padding: 1.8em 1.5em;
+$evo-progress-time-padding: 1.2em 0.8em;
+$evo-progress-step-background: $sapphire-diet;
+
+$evo-progress-label-color: $onyx-dark-20;
+
+// Chip icon
+$evo-chip-icon-color-default: $sapphire-medium;
+$evo-chip-icon-background-color-default: $white;
+$evo-chip-icon-padding: 0.2em 0.6em;
+$evo-chip-icon-margin: 0 0.6em 0 0;
+
+// Chip list
+$evo-chip-list-margin: 0 0em 1em;
+
+// Number Ticker
+$number-ticker-padding: 0.1em 0em;
+$number-ticker-font-size: 70px;
+$number-ticker-margin:0 3px;
+$number-ticker-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+$number-ticker-margin-top: 2em;
+$number-ticker-label-font-size: 25px;
+$number-ticker-label-border-width: 90px;
+$number-ticker-label-border: 2px solid transparentize($black, 0.8);
+
+// Shelf
+$evo-shelf-margin: 1em 0;
+$evo-shelf-padding: 1em;
+
+
+// Slider
+$evo-slider-scrubber-size: 25px;
+$evo-slider-height: 6px;
+$evo-slider-scrubber-border: 3px solid $white;
+$evo-slider-scrubber-box-shadow: 1px 1px 1px $black;
+$evo-slider-scrubber-offset: -8px;
+
+
+// Slide Toggle
+// Name, True text, False text
+$slide-toggle-text-variants: (
+  (default, "Yes", "No"),
+);

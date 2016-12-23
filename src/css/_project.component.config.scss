@@ -1,0 +1,546 @@
+
+// Project Config Sample
+// This is the Harmonise config sample.
+
+/*
+========================================
+BEGIN PROJECT SIDE SASS CONFIG
+========================================
+*/
+
+// Component usage
+
+$atoms:(
+  'breadcrumb',
+  'button',
+  'chip',
+  'datepicker',
+  'dropdown',
+  'icon',
+  'icon-circle',
+  'icon-list',
+  'input',
+  'notification',
+  'progress',
+  'number-ticker',
+  'slide-toggle',
+  'slider',
+  'tabs',
+  'tooltip',
+);
+$molecules:(
+  'accordion',
+  'alert',
+  'article-card',
+  'card',
+  'carousel',
+  'drag-and-drop',
+  'multi-select',
+  'shelf'
+);
+$organisms:(
+  'banner',
+  'form-header',
+  'full-page',
+  'modal',
+  // disabled to fix issue with different sized sticky footers
+  // and content not clickable
+  // 'sticky-footer',
+  'wheel',
+);
+
+// Component Variants
+// These component variants create classes based off of the project's class name of the component
+
+
+// Accordion Variants
+$accordion-variants: (
+  variants: (
+    blue: (
+      bg: none,
+      title-font-weight: normal,
+      border-color: transparent,
+      header-txt: $sapphire-dark,
+      txt: $black,
+      icon: $sapphire-dark
+    ),
+    grey: (
+      bg:  $onyx-dark-6,
+      title-font-weight: bold,
+      border-color: $onyx-dark-20,
+      header-txt: $onyx-dark-70,
+      txt: $black,
+      icon: $sapphire-dark
+    )
+  )
+);
+
+// Alert Variants
+$alert-variants: (
+  variants: (
+    info: (
+      bg:  $sapphire-light,
+      icon: $sapphire-dark,
+      txt: $black
+    ),
+    info-dark: (
+      bg: $sapphire-bright,
+      icon: $sapphire-dark,
+      txt: $white
+    ),
+    warn: (
+      bg: $topaz-bright,
+      icon: $topaz-dark,
+      txt: $black
+    ),
+    danger: (
+      bg: $garnet-bright,
+      icon: $garnet-dark,
+      txt: $white
+    ),
+    confirmation: (
+      bg: $emerald-bright,
+      icon: $emerald-dark,
+      txt: $white
+    )
+  )
+);
+
+// Article Card Variants
+$article-card-variants: (
+  variants: (
+    info: (
+      bg:  $sapphire-light,
+      icon: $sapphire-dark,
+      txt: $black
+    )
+  )
+);
+
+
+// Banner Variants
+$banner-variants: (
+  variants: (
+    white: (
+      bg:  $white,
+      txt: $black
+    ),
+    white-txt: (
+      bg:  inherit,
+      txt: $white
+    ),
+  )
+);
+
+
+
+$breadcrumb-variants: (
+  variants: (
+    blue: (
+      txt:  $black,
+      border: $sapphire-bright,
+      active: $sapphire-bright
+    )
+  )
+);
+
+// Chip Variants
+$chip-variants: (
+  variants: (
+    blue: (
+      txt:  $black,
+      border: $sapphire-bright,
+      active: $sapphire-bright
+    )
+  )
+);
+
+
+
+// Button Variants
+$button-variants: (
+  variants: (
+    standard: (
+      bg: $sapphire-medium,
+      border: $sapphire-medium,
+      hover: $sapphire-dark,
+      hover-txt: $white,
+      txt: $white
+    ),
+    blue: (
+      bg: $sapphire-medium,
+      border: $sapphire-medium,
+      hover: $sapphire-dark,
+      hover-txt: $white,
+      txt: $white
+    ),
+    grey: (
+      bg: $onyx-light,
+      border: $onyx-light,
+      hover: $onyx-bright,
+      hover-txt: $white,
+      txt: $white
+    ),
+    dark-grey: (
+      bg: $onyx-medium,
+      border: $onyx-medium,
+      hover: transparent,
+      hover-txt: $onyx-bright,
+      txt: $white
+    ),
+    green: (
+      bg: $turquoise-bright,
+      border: $turquoise-bright,
+      hover: $turquoise-dark,
+      hover-txt: $white,
+      txt: $white
+    ),
+    text: (
+      bg: transparent,
+      border: transparent,
+      hover: transparent,
+      hover-txt: $sapphire-dark,
+      txt: $sapphire-medium
+    ),
+    white: (
+      bg: $white,
+      border: $white,
+      hover: $onyx-dark-14,
+      hover-txt: $black,
+      txt: $black
+    ),
+    purple: (
+      bg: $amethyst-medium,
+      border: $amethyst-medium,
+      hover: $amethyst-dark,
+      hover-txt: $white,
+      txt: $white
+    ),
+    light-blue: (
+      bg: $sapphire-bright,
+      border: $sapphire-bright,
+      hover: $white,
+      hover-txt: $white,
+      txt: $white
+    ),
+    lime:(
+      bg: $emerald-bright,
+      border: $emerald-bright,
+      hover: $white,
+      hover-txt: $white,
+      txt: $white
+    ),
+    red:(
+      bg: $garnet-medium,
+      border: $garnet-medium,
+      hover: $white,
+      hover-txt: $white,
+      txt: $white
+    ),
+    inverted-white:(
+      bg: transparent,
+      border: $white,
+      hover: transparent,
+      hover-txt: $white,
+      txt: $white
+    )
+  )
+);
+
+// Card Variants
+$card-variants: (
+  variants: (
+    info: (
+      bg:  $sapphire-diet,
+      txt: $black
+    ),
+    light-blue: (
+      bg:  $sapphire-light,
+      txt: $black
+    ),
+    light: (
+      bg:  $onyx-dark-6,
+      txt: $black,
+      radius: 2px
+    ),
+    complete: (
+      bg: $sapphire-diet,
+      icon: $turquoise-bright,
+      txt: $turquoise-bright,
+    ),
+    active: (
+      bg: $sapphire-diet,
+      icon: $sapphire-bright,
+      txt: $sapphire-bright,
+    ),
+    turquoise: (
+      bg: $turquoise-light,
+      icon: $sapphire-bright,
+      txt: $black,
+    ),
+    transparent: (
+      bg: rgba(255,255,255,0.8)
+    ),
+  )
+);
+
+// Alt Card
+$alt-card-variants: (
+  variants: (
+    dark-blue: (
+      bg: $sapphire-bright,
+      txt-expanded: $white
+    ),
+    blue: (
+      bg: $sapphire-medium,
+      txt-expanded: $white
+    ),
+    light-blue: (
+      bg: $sapphire-bright,
+      txt-expanded: $white
+    ),
+    green: (
+      bg: $turquoise-bright,
+      txt-expanded: $white
+    ),
+    purple: (
+      bg: $amethyst-medium,
+      txt-expanded: $white
+    ),
+    red:(
+      bg: $garnet-bright,
+      txt-expanded: $white
+    ),
+    lime:(
+      bg: $emerald-bright,
+      txt-expanded: $white
+    )
+  )
+);
+// Icon Variants
+$icon-variants: (
+  variants: (
+    light-blue: (
+      color: $sapphire-bright
+    ),
+    medium-blue: (
+      color: $sapphire-medium
+    ),
+    dark-blue: (
+      color: $sapphire-dark
+    ),
+    black: (
+      color: $black
+    ),
+    light-grey: (
+      color: $onyx-dark-20
+    ),
+    garnet: (
+      color: $garnet-medium
+    ),
+    emerald: (
+      color: $emerald-medium
+    ),
+    topaz: (
+      color: $topaz-bright
+    ),
+    purple: (
+      color: $amethyst-medium
+    ),
+    green: (
+      color: $turquoise-bright
+    ),
+    white: (
+      color: $white
+    ),
+  )
+);
+
+// Icon Circles Variants
+$icon-circle-variants: (
+  variants: (
+    light-blue: (
+      border: $sapphire-bright,
+      bg: $sapphire-bright,
+      color: $white,
+      caption-color: $black
+    ),
+    blue: (
+      border: $sapphire-medium,
+      bg: $sapphire-medium,
+      color: $white,
+      caption-color: $black
+    ),
+    trans-blue: (
+      border: transparent,
+      bg: rgba(0, 109, 158, 0.45),
+      color: $white,
+      caption-color: $black
+    ),
+    info: (
+      border: $onyx-light,
+      bg: $white,
+      color: $sapphire-bright,
+      caption-color: $sapphire-bright
+    ),
+    white: (
+      border: $white,
+      bg: transparent,
+      color: $white,
+      caption-color: $sapphire-bright
+    ),
+    red: (
+      border: $garnet-bright,
+      bg: $garnet-bright,
+      color: $white,
+      caption-color: $black
+    ),
+    green: (
+      border: $turquoise-bright,
+      bg: $turquoise-bright,
+      color: $white,
+      caption-color: $black
+    ),
+    lime: (
+      border: $emerald-bright,
+      bg: $emerald-bright,
+      color: $white,
+      caption-color: $black
+    ),
+    purple: (
+      border: $amethyst-medium,
+      bg: $amethyst-medium,
+      color: $white,
+      caption-color: $sapphire-bright
+    )
+  )
+);
+
+
+// Shelf Variants
+$shelf-variants: (
+  variants: (
+    standard: (
+      bg:  $onyx-dark-2,
+      border: $onyx-dark-20,
+      txt: $black
+    ),
+    info: (
+      bg:  $sapphire-diet,
+      border: $onyx-dark-70,
+      txt: $black
+    )
+  )
+);
+
+// Carousel Variants
+$carousel-variants: (
+  variants: (
+    large: (
+      height: 500px,
+      width: 100%
+    ),
+    medium: (
+      height: 300px,
+      width: 100%
+    ),
+    small: (
+      height: 150px,
+      width: 100%
+    ),
+    fluid: (
+      height: 100%,
+      width: 100%
+    ),
+  )
+);
+
+// Notification Variants
+$notification-variants: (
+  variants: (
+    blue: (
+      txt:  $black,
+      bg:  $white,
+      border: $sapphire-medium,
+      color: $sapphire-medium
+    ),
+    purple: (
+      txt:  $black,
+      bg:  $white,
+      border: $amethyst-medium,
+      color: $amethyst-medium
+    ),
+    green: (
+      txt:  $black,
+      bg:  $white,
+      border: $turquoise-bright,
+      color: $turquoise-bright
+    ),
+    light-blue: (
+      txt:  $black,
+      bg:  $white,
+      border: $sapphire-bright,
+      color: $sapphire-bright
+    )
+  )
+);
+
+// Number Ticker Variants
+$number-ticker-variants: (
+  variants: (
+    blue: (
+      bg:  $sapphire-bright,
+      txt: $white
+    ),
+    purple: (
+      bg: $amethyst-medium,
+      txt: $white
+    )
+  )
+);
+
+// Progress Variants
+$progress-variants: (
+  variants: (
+    blue: (
+      bg:  $sapphire-dark,
+      txt: $white
+    )
+  )
+);
+
+// Slider Variants
+$slider-variants:(
+  variants: (
+    standard: (
+      bg:  $onyx-light,
+      txt: $white,
+      scrubber-bg: $onyx-dark-50,
+      tick-bg: $onyx-light
+    )
+  )
+);
+
+// Slide Toggle Variants
+$slide-toggle-variants:(
+  variants: (
+    blue: (
+      bar-bg:  $onyx-dark-14,
+      thumb-default: $white,
+      bar-checked:  $sapphire-medium,
+      thumb-checked: $white
+    ),
+    garnet: (
+      bar-bg:  $onyx-dark-14,
+      thumb-default: $white,
+      bar-checked:  $garnet-bright,
+      thumb-checked: $white
+    )
+  )
+);
+
+/*
+========================================
+END PROJECT SIDE SASS CONFIG
+========================================
+*/
